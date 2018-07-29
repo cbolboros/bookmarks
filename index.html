@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Bookmarks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="center-align">Bookmarks</h1>
+        <div class="addBookmark center-align">
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add bookmark</a>
+        </div>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h3>Enter Bookmark</h3>
+                <div class="input-field col s12">
+                    <input id="bookmarkTitle" type="text" class="validate">
+                    <label for="bookmarkTitle">Title</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="bookmarkLink" type="text" class="validate">
+                    <label for="bookmarkLink">Link</label>
+                </div>
+                <a id="addBookmarkBtn" class="waves-effect waves-light btn">Add bookmark</a>
+            </div>
+        </div>
+
+        <ul id="bookmarks" class="collection">
+            <li class="collection-item">
+                <div>
+                    <img id="favicon" src="https://www.google.com/s2/favicons?domain=www.facebook.com" alt="">
+                    <a id="link" href="http://www.facebook.com">Facebook</a>
+                </div>
+                <div>
+                    <button class='btn waves-effect red'>
+                        <i class="material-icons">delete</i>
+                    </button>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
